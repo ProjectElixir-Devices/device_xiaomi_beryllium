@@ -9,6 +9,12 @@ $(call inherit-product, device/xiaomi/beryllium/device.mk)
 # Inherit some common stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# Elixir-Stuff
+TARGET_SUPPORTS_GOOGLE_RECORDER=true
+TARGET_INCLUDE_STOCK_ARCORE=true
+TARGET_INCLUDE_LIVE_WALLPAPERS=true
+TARGET_BOOT_ANIMATION_RES=1080
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_beryllium
 PRODUCT_DEVICE := beryllium
